@@ -1,0 +1,22 @@
+@import "variables.less";
+
+/* Общие стили */
+
+.navbar {
+  background: #2F323B;
+  border: none;
+  border-radius: 0;
+
+}
+.navbar .trifit__logo {
+  color: #fff;
+}
+
+.navbar .badge {
+  margin-left: 15px;
+  font-weight: normal;
+  background-color: #5491E7;
+}
+.navbar .caret {
+  margin-left: 15px;
+}

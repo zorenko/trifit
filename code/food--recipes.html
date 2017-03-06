@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны питания</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
+</head>
+<body>
+
+<div class="food__recipes">
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand trifit__logo" href="#">Trifit CRM</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Клиенты <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Отчеты<span class="badge">4</span></a></li>
+        <li><a href="#">Заявки<span class="badge">4</span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Константин<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="subheader">
+  <div class="container">
+    <h1 class="subheader__title"><span class="subheader__icon"></span>Питание</h1>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">Планы питания</button>
+      <button type="button" class="btn btn-default">Шаблоны</button>
+      <button type="button" class="btn btn-primary">Рецепты</button>
+    </div><!-- /.btn-group -->
+  </div><!-- /.container -->
+</div><!-- /.subheader -->
+
+<div class="filters">
+  <div class="container">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Все блюда <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /.btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Любое время<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /.btn-group -->
+    <a href="#" class="filters__reset"></a>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Поиск">
+      </div>
+    </form>
+  </div><!-- /.container -->
+</div><!-- /.filters -->
+
+<div class="table">
+  <div class="container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <td>456 блюд найдено <button type="button" class="btn btn-primary">+</button></td>
+          <td>Ккал (100 г)</td>
+          <td>БЖУ (100 г)</td>
+          <td>Время</td>
+          <td>Рецепт</td>
+          <td>Видео</td>
+          <td>Замораживать</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-xs-3">
+            <div class="row">
+              <div class="col-xs-4"><img class="img-responsive img-circle" src="img/img.jpg" alt=""></div>
+              <div class="col-xs-8"><h4>Название</h4><span>Закуска</span></div>
+            </div>
+          </td>
+          <td>300</td>
+          <td>10 + 10 + 10</td>
+          <td>15 мин</td>
+          <td><span class="label label-success"> </span></td>
+          <td><span class="label label-success"> </span></td>
+          <td><span class="label label-primary"> </span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /.container -->
+</div><!-- /.table -->
+
+
+</div><!-- /.food__templates -->
+</body>
+</html>
