@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны питания</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
+</head>
+<body class="food_editor">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand trifit__logo" href="#">Trifit CRM</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Клиенты <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Отчеты<span class="badge">4</span></a></li>
+          <li><a href="#">Заявки<span class="badge">4</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Константин<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+  <div class="subheader">
+    <div class="container">
+      <a class="subheader__go-back">Вернуться назад</a>
+      <h1 class="subheader__title"><span>Редактор рецепта</span></h1>
+    </div><!-- /.container -->
+  </div><!-- /.subheader -->
+
+<div class="editor">
+  <div class="container">
+    <form name="editor__form editor__form--food" class="editor__form editor__form--food" action="" method="post">
+      <div class="row">
+        <div class="col-xs-12 col-md-9 editor__form">
+          <fieldset>
+            <div class="row">
+              <div class="col-xs-12 col-md-7">
+                <label>Название</label>
+                <input type="text" placeholder="Куриный супчик"></input>
+                <label>Ссылка на видео</label>
+                <input type="text" placeholder="https://"></input>
+              </div>
+              <div class="col-xs-12 col-md-5">
+                <label>Тип блюда</label>
+                <select>
+                  <option value="">Суп</option>
+                  <option value="">Второе</option>
+                  <option value="">Салат</option>
+                  <option value="">Компот</option>
+                </select>
+              </div>
+            </div><!-- /.row -->
+          </fieldset>
+          <fieldset class="editor__ingridients">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="editor__heading">На 100 грамм</div>
+                <label for="">
+                  <span class="editor__label">Ингридиент<span class="editor__label__hint">В порядке появления</span></span>
+                  <button type="button" class="add__btn btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+                </label>
+                <input type="text" placeholder="Морковь"></input>
+              </div>
+              <div class="col-xs-2">
+                <div class="editor__heading">100</div>
+                <label for="">
+                  <span class="editor__label">Вес, г<span class="editor__label__hint">сырой</span></span>
+                </label>
+                <input type="text" placeholder="15"></input>
+              </div>
+              <div class="col-xs-2">
+                <div class="editor__heading">327</div>
+                <label for="">
+                  <span class="editor__label">Ккал<span class="editor__label__hint">на 100 г</span></span>
+                </label>
+                <input type="text" placeholder="11"></input>
+              </div>
+              <div class="col-xs-2">
+                <div class="editor__heading">11</div>
+                <label for="">
+                  <span class="editor__label">БЖУ<span class="editor__label__hint">на 100 г</span></span>
+                </label>
+                <input type="text" placeholder="3"></input>
+              </div>
+              <div class="col-xs-1">
+                <div class="editor__heading">9</div>
+                <label for="">
+                  <span class="editor__label"> </span>
+                </label>
+                <input type="text" placeholder="1"></input>
+              </div>
+              <div class="col-xs-1">
+                <div class="editor__heading">24</div>
+                <label for="">
+                  <span class="editor__label"> </span>
+                </label>
+                <input type="text" placeholder="0.75"></input>
+              </div>
+            </div><!-- /.row -->
+          </fieldset>
+          <fieldset class="editor__ingridientsmore">
+            <div class="row">
+              <div class="col-xs-5">
+                <label for="">
+                  <span class="editor__label">Вне рассчетов</span>
+                  <button type="button" class="add__btn btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+                </label>
+                <input type="text" placeholder="Соль и перец"></input>
+              </div>
+              <div class="col-xs-7">
+                <label for="">
+                  <span class="editor__label"></span>
+                </label>
+                <input type="text" placeholder="По вкусу"></input>
+              </div>
+            </div>
+          </fieldset>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">Сохранить</button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Сохранить копию</a></li>
+            </ul>
+          </div>
+        </div><!-- /.editor__form -->
+        <div class="col-xs-12 col-md-3 editor__instruction">
+          <label>Инструкция по приготовлению</label>
+          <textarea form="food__editor" rows="10" cols="45" name="text" placeholder="Ваш текст"></textarea>
+        </div><!-- /.editor__instruction -->
+      </div><!-- /.row -->
+    </form>
+  </div><!-- /.container -->
+</div><!-- /.editor -->
+
+</body>
+</html>
