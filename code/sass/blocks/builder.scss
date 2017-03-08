@@ -1,0 +1,13 @@
+.builder {
+  padding-bottom: 50px;
+}
+
+.builder__header {
+  padding: 15px 0;
+  background: rgba($navbar-bg, .8);
+  &__input {
+    float: left;
+    width: 60%;
+    margin-right: 20px;
+  }
+}

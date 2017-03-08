@@ -39,3 +39,27 @@ a {
     top: 0;
   }
 }
+
+fieldset {
+  margin-bottom: 20px;
+}
+input, textarea, select {
+  display: block;
+  font-weight: normal;
+  // margin-bottom: 25px;
+  width: 100%;
+  border: none;
+  border-radius: $radius;
+  padding: 8px 15px;
+  background: #fff;
+  &:focus, &:hover, &:active {
+    border: none;
+    outline: none;
+  }
+  &:focus, &:active {
+    background: rgba(#fff, .8);
+  }
+}
+select {
+  height: 36px;
+}

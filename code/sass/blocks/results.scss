@@ -49,9 +49,9 @@
   &__client {
     position: relative;
     &__img {
-      width: 46px;
-      height: 46px;
-      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
     }
     &:not(.table__heading)::after {
       position: absolute;;

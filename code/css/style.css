@@ -25,6 +25,26 @@ a:hover, a:focus {
   .add__btn > .glyphicon {
     top: 0; }
 
+fieldset {
+  margin-bottom: 20px; }
+
+input, textarea, select {
+  display: block;
+  font-weight: normal;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  background: #fff; }
+  input:focus, input:hover, input:active, textarea:focus, textarea:hover, textarea:active, select:focus, select:hover, select:active {
+    border: none;
+    outline: none; }
+  input:focus, input:active, textarea:focus, textarea:active, select:focus, select:active {
+    background: rgba(255, 255, 255, 0.8); }
+
+select {
+  height: 36px; }
+
 .table {
   background: transparent; }
 
@@ -82,9 +102,9 @@ a:hover, a:focus {
   position: relative; }
   .food_plans .table__client__img,
   .food_templates .table__client__img {
-    width: 46px;
-    height: 46px;
-    margin-right: 20px; }
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; }
   .food_plans .table__client:not(.table__heading)::after,
   .food_templates .table__client:not(.table__heading)::after {
     position: absolute;
@@ -229,51 +249,67 @@ a:hover, a:focus {
     left: 32px; }
 
 .editor {
-  background: #E9EDF0; }
+  background: #E9EDF0;
+  padding-bottom: 30px; }
 
-.editor__form fieldset {
+.editor__form input {
+  margin-bottom: 25px; }
+
+.editor__headings {
   margin-bottom: 20px; }
-  .editor__form fieldset.editor__ingridients .editor__label {
-    min-height: 32px; }
-  .editor__form fieldset.editor__ingridients input {
-    padding: 8px 2px; }
-  .editor__form fieldset.editor__ingridientsmore .editor__label {
-    padding-top: 8px;
-    min-height: 32px; }
 
-.editor__form label {
+.editor__heading {
+  font-size: 19px;
+  font-weight: normal; }
+
+.editor__labels {
+  margin-bottom: 15px; }
+
+.editor__label {
   display: block;
   font-weight: normal;
   margin-bottom: 15px; }
-
-.editor__form .editor__label {
-  display: inline-block; }
-  .editor__form .editor__label > .editor__label__hint {
+  .editor__label__text {
+    display: inline-block; }
+  .editor__label__hint {
     display: block;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.4); }
 
-.editor__form input, .editor__form textarea, .editor__form select {
-  display: block;
-  font-weight: normal;
-  margin-bottom: 25px;
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 15px;
-  background: #fff; }
-  .editor__form input:focus, .editor__form input:hover, .editor__form input:active, .editor__form textarea:focus, .editor__form textarea:hover, .editor__form textarea:active, .editor__form select:focus, .editor__form select:hover, .editor__form select:active {
-    border: none;
-    outline: none; }
-  .editor__form input:focus, .editor__form input:active, .editor__form textarea:focus, .editor__form textarea:active, .editor__form select:focus, .editor__form select:active {
-    background: rgba(255, 255, 255, 0.8); }
+.editor__inputs {
+  position: relative; }
+  .editor__inputs::after {
+    content: "x";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: -13px;
+    right: -30px;
+    cursor: pointer;
+    padding: 20px; }
 
-.editor__form select {
-  height: 36px; }
+.editor__ingridients input {
+  padding: 8px 2px; }
 
-.editor__form textarea {
-  min-height: 480px; }
+.editor__ingridientsmore .editor__label__text {
+  padding-top: 8px; }
 
-.editor__form .editor__heading {
-  font-size: 19px;
-  margin-bottom: 20px; }
+@media (max-width: 768px) {
+  .editor__heading {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .editor__form textarea {
+    min-height: 490px; } }
+
+.builder {
+  padding-bottom: 50px; }
+
+.builder__header {
+  padding: 15px 0;
+  background: rgba(47, 50, 59, 0.8); }
+  .builder__header__input {
+    float: left;
+    width: 60%;
+    margin-right: 20px; }
