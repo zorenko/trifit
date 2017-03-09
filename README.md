@@ -2,12 +2,12 @@
 
 
 #Верстка
-[Редактор плана](code/food_builder.html)
+[Редактор плана](zorenko.github.io/trifit/code/food_builder.html)
 
-[Редактор рецепта](code/food_editor.html)
+[Редактор рецепта](zorenko.github.io/trifit/code/food_editor.html)
 
-[Планы](code/food_plans.html)
+[Планы](zorenko.github.io/trifit/code/food_plans.html)
 
-[Рецепты](code/food_recipes.html)
+[Рецепты](zorenko.github.io/trifit/code/food_recipes.html)
 
-[Шаблоны](code/food_templates.html)
+[Шаблоны](zorenko.github.io/trifit/code/food_templates.html)
