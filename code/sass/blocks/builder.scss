@@ -121,10 +121,17 @@
 
 .builder__content {
   margin-top: 30px;
+  [class^=col] {
+    padding-left: 0;
+    padding-right: 5px;
+  }
   &__heading {
     color: $text-grey;
     margin-bottom: 20px;
     padding: 0 70px;
+    [class^=col] {
+      padding-left: 5px;
+    }
   }
 }
 .builder__dish {
@@ -136,8 +143,12 @@
     border-radius: $radius;
     background: #fff;
     input {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: 1px dashed #fff;
+      &:hover, &:focus, &:active {
+        border: 1px dashed $text-grey-hover;
+      }
     }
     .glyphicon {
       position: absolute;
@@ -161,11 +172,12 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     .ingridient {
-      padding: 10px 0;
       display: block;
-      input {
-        display: inline;
+      margin-bottom: 0;
+      input[type=checkbox] {
+        margin: 13px 0;
         margin-right: 20px;
+        vertical-align: middle;
       }
     }
     .comment {

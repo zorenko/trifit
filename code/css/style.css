@@ -280,7 +280,9 @@ select {
     margin-bottom: 20px; }
 
 .editor__form {
-  padding-right: 40px; }
+  padding-right: 65px; }
+  .editor__form [class^=col-] {
+    padding-right: 5px; }
 
 .editor__headings {
   margin-bottom: 20px; }
@@ -304,16 +306,11 @@ select {
 
 .editor__inputs {
   position: relative; }
-  .editor__inputs::after {
-    content: "x";
+  .editor__inputs .glyphicon {
     position: absolute;
-    display: block;
-    width: 20px;
-    height: 20px;
-    top: -13px;
-    right: -30px;
-    cursor: pointer;
-    padding: 20px; }
+    top: 10px;
+    right: -40px;
+    color: rgba(0, 0, 0, 0.4); }
 
 .editor__ingridients input {
   padding: 8px 2px; }
@@ -434,10 +431,15 @@ select {
 
 .builder__content {
   margin-top: 30px; }
+  .builder__content [class^=col] {
+    padding-left: 0;
+    padding-right: 5px; }
   .builder__content__heading {
     color: rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
     padding: 0 70px; }
+    .builder__content__heading [class^=col] {
+      padding-left: 5px; }
 
 .builder__dish__header, .builder__dish__dropdown {
   position: relative;
@@ -446,8 +448,11 @@ select {
   border-radius: 4px;
   background: #fff; }
   .builder__dish__header input, .builder__dish__dropdown input {
-    padding-left: 0;
-    padding-right: 0; }
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px dashed #fff; }
+    .builder__dish__header input:hover, .builder__dish__header input:focus, .builder__dish__header input:active, .builder__dish__dropdown input:hover, .builder__dish__dropdown input:focus, .builder__dish__dropdown input:active {
+      border: 1px dashed rgba(0, 0, 0, 0.15); }
   .builder__dish__header .glyphicon, .builder__dish__dropdown .glyphicon {
     position: absolute;
     top: 30px;
@@ -467,11 +472,12 @@ select {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
   .builder__dish__dropdown .ingridient {
-    padding: 10px 0;
-    display: block; }
-    .builder__dish__dropdown .ingridient input {
-      display: inline;
-      margin-right: 20px; }
+    display: block;
+    margin-bottom: 0; }
+    .builder__dish__dropdown .ingridient input[type=checkbox] {
+      margin: 13px 0;
+      margin-right: 20px;
+      vertical-align: middle; }
   .builder__dish__dropdown .comment {
     margin-top: 20px;
     padding-top: 20px;

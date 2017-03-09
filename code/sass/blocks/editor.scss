@@ -11,7 +11,10 @@
 }
 
 .editor__form {
-  padding-right: 40px;
+  padding-right: 65px;
+  [class^=col-] {
+    padding-right: 5px;
+  }
 }
 .editor__headings {
   margin-bottom: 20px;
@@ -37,16 +40,11 @@
 }
 .editor__inputs {
   position: relative;
-  &::after {
-    content: "x";
+  .glyphicon {
     position: absolute;
-    display: block;
-    width: 20px;
-    height: 20px;
-    top: -13px;
-    right: -30px;
-    cursor: pointer;
-    padding: 20px;
+    top: 10px;
+    right: -40px;
+    color: $text-grey;
   }
 }
 
