@@ -260,15 +260,16 @@ select {
 .filters__item .caret {
   margin-left: 15px; }
 
-.filters__search {
+input[type=text].filters__search {
   position: relative;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.65);
   min-width: 300px;
   padding-left: 40px; }
-  .filters__search--icon {
-    top: 3px;
-    left: 32px; }
+
+.filters__search--icon {
+  top: 3px;
+  left: 32px; }
 
 .editor {
   background: #E9EDF0;
