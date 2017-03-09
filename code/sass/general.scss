@@ -8,6 +8,7 @@ $text-grey: rgba(0,0,0,.4);
 $text-grey-hover: rgba($text-grey, .15);
 
 $radius: 4px;
+$padding: 8px 15px;
 
 body {
   background: $body-bg;
@@ -40,17 +41,19 @@ a {
   }
 }
 
-fieldset {
-  margin-bottom: 20px;
+
+label {
+  font-weight: normal;
 }
-input, textarea, select {
+input[type=search],
+input[type=text],
+textarea,
+select {
   display: block;
   font-weight: normal;
-  // margin-bottom: 25px;
-  width: 100%;
   border: none;
   border-radius: $radius;
-  padding: 8px 15px;
+  padding: $padding;
   background: #fff;
   &:focus, &:hover, &:active {
     border: none;
@@ -59,6 +62,11 @@ input, textarea, select {
   &:focus, &:active {
     background: rgba(#fff, .8);
   }
+}
+input[type=text],
+textarea,
+select {
+  width: 100%;
 }
 select {
   height: 36px;

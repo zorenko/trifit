@@ -55,13 +55,13 @@
   </div><!-- /.container -->
 </nav>
 
-<div class="builder">
-  <div class="builder__header">
+<form class="builder" name="builder" method="" action="">
+  <fieldset class="builder__header">
     <div class="container">
-      <input class="builder__header__input" type="text" name="" value="" placeholder="Название плана">
-      <button type="button" class="btn btn-primary">Предпросмотр</button>
-      <div class="btn-group pull-right">
-        <button type="button" class="btn btn-primary ">Сохранить</button>
+      <input class="builder__header__search" type="search" name="" value="" placeholder="Название плана">
+      <button type="button" class="btn btn-primary builder__header__preview pull-left">Предпросмотр</button>
+      <div class="btn-group pull-left">
+        <button type="button" class="btn btn-primary">Сохранить</button>
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="caret"></span>
           <span class="sr-only">Toggle Dropdown</span>
@@ -72,74 +72,139 @@
         </ul>
       </div><!-- /.btn-group -->
     </div><!-- /.container -->
-  </div><!-- /.builder__header -->
+  </fieldset><!-- /.builder__header -->
 
-  <div class="builder__body">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-3">
-          <div class="builder__search">
-            <fieldset>
-              <input type="text" name="" value="" placeholder="Название плана">
-              <select>
-                <option value="">Суп</option>
-                <option value="">Второе</option>
-                <option value="">Салат</option>
-                <option value="">Компот</option>
-              </select>
-              <div class="builder__search__result">
-                <h6 class="builder__search__heading">Заголовок</h6>
-                <span class="builder__search__descr">327 ккал / 100 г</span>
-              </div><!-- /.builder__search__result -->
-            </fieldset>
-          </div><!-- /.builder__search -->
-        </div>
-        <div class="col-xs-12 col-md-9">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="builder__filter">
+          <fieldset>
+            <div class="builder__filter__search">
+              <span class="glyphicon glyphicon-search"></span>
+              <input type="text" name="" value="" placeholder="Поиск">
+            </div>
+            <select>
+              <option value="">Суп</option>
+              <option value="">Второе</option>
+              <option value="">Салат</option>
+              <option value="">Компот</option>
+            </select>
+            <div class="builder__result">
+              <h6 class="builder__result__heading">Заголовок</h6>
+              <span class="builder__result__descr">327 ккал / 100 г</span>
+              <span class="glyphicon glyphicon-plus"></span>
+            </div><!-- /.builder__result -->
+          </fieldset>
+        </div><!-- /.builder__search -->
+      </div>
+
+      <div class="col-xs-12 col-md-8">
+        <div class="builder__body">
           <div class="builder__client">
-            <img src="img/img.jpg" alt="" class="builder__client__img img-responsive img-circle col-xs-3">
+            <img src="img/img.jpg" alt="" class="builder__client__img img-circle">
             <div class="builder__client__info">
-              <span class="client__name">Михаил Марченко</span>, <span class="client__age">21</span>
-              <span class="client__about">Преподаватель химии, Уфа</span>
+              <div class="line"><span class="client__name">Михаил Марченко</span>, <span class="client__age">21</span></div>
+              <div class="line"><span class="client__about">Преподаватель химии, Уфа</span></div>
             </div><!-- /.builder__client__info -->
           </div><!-- /.builder__client -->
 
           <div class="builder__text">
             <a href="#" class="builder__text__set">Задать поясняющий текст</a>
-            <a href="#" class="builder__text__set">Убрать поясняющий текст</a>
-            <textarea name="name" rows="8" cols="80"></textarea>
+            <a href="#" class="builder__text__delete">Убрать поясняющий текст</a>
+            <textarea name="name" rows="4" cols="80"></textarea>
           </div><!-- /.builder__text -->
 
           <div class="builder__content">
             <div class="builder__content__heading">
-              <div class="col-xs-12 col-sm-5"></div>
-              <div class="col-xs-12 col-sm-2">Грамм</div>
-              <div class="col-xs-12 col-sm-2">Ккал</div>
-              <div class="col-xs-12 col-sm-3">БЖУ</div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-5"></div>
+                <div class="col-xs-12 col-sm-2">Грамм</div>
+                <div class="col-xs-12 col-sm-2">Ккал</div>
+                <div class="col-xs-12 col-sm-3">БЖУ</div>
+              </div>
             </div><!-- /.builder__content__heading -->
 
-            <div class="builder__dish--empty">Добавьте первый рецепт, выбрав его на панели слева</div>
-            <div class="builder__dish">
-              <div class="col-xs-12 col-sm-5">
-                <input type="text" placeholder="Название блюда">
-              </div>
-              <div class="col-xs-12 col-sm-2">
-                <input type="text" placeholder="100">
-              </div>
-              <div class="col-xs-12 col-sm-2">
-                <input type="text" placeholder="327">
-              </div>
-              <div class="col-xs-12 col-sm-3">
-                <input type="text" placeholder="10 – 20 – 53">
-              </div>
-            </div><!-- /.builder__content__dish -->
+            <div class="builder__dish--empty"><span>Добавьте первый рецепт, выбрав его на панели слева</span></div>
+
+            <div class="builder__dish builder__dish--closed">
+              <div class="builder__dish__header">
+                <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <input type="text" placeholder="Название блюда">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="100">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="327">
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <input type="text" placeholder="10 – 20 – 53">
+                  </div>
+                </div>
+                <a href="#" class="glyphicon glyphicon-remove"></a>
+                <a href="#" class="glyphicon glyphicon-chevron-down"></a>
+              </div><!-- /.builder__dish__header -->
+
+              <div class="builder__dish builder__dish__dropdown">
+                <label class="ingridient">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                      <input type="checkbox" id="ingridient" name="ingridient" value="" checked>Ингридиент
+                    </div>
+                    <div class="col-xs-12 col-sm-2">120</div>
+                    <div class="col-xs-12 col-sm-2">120</div>
+                    <div class="col-xs-12 col-sm-3">8</div>
+                  </div><!-- /.row -->
+                </label><!-- /.ingridient -->
+                <div class="comment"><label for="comment">Комментарий</label><textarea id="comment" name="name" rows="4" cols="80"></textarea></div>
+              </div><!-- /.builder__dish__dropdown -->
+            </div><!-- /.builder__dish-closed -->
+
+            <div class="builder__dish builder__dish--opened">
+              <div class="builder__dish__header">
+                <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <input type="text" placeholder="Название блюда">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="100">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="327">
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <input type="text" placeholder="10 – 20 – 53">
+                  </div>
+                </div>
+                <a href="#" class="glyphicon glyphicon-remove"></a>
+                <a href="#" class="glyphicon glyphicon-chevron-down"></a>
+              </div><!-- /.builder__dish__header -->
+              <div class="builder__dish builder__dish__dropdown">
+                <label class="ingridient">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                      <input type="checkbox" id="ingridient" name="ingridient" value="" checked>Ингридиент
+                    </div>
+                    <div class="col-xs-12 col-sm-2">120</div>
+                    <div class="col-xs-12 col-sm-2">120</div>
+                    <div class="col-xs-12 col-sm-3">8</div>
+                  </div><!-- /.row -->
+                </label><!-- /.ingridient -->
+                <div class="comment"><label for="comment">Комментарий</label><textarea id="comment" name="name" rows="4" cols="80"></textarea></div>
+              </div><!-- /.builder__dish__dropdown -->
+            </div><!-- /.builder__dish-opened -->
 
           </div><!-- /.builder__content -->
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </div><!-- /.builder__body -->
+        </div><!-- /.builder__body -->
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 
-</div><!-- /.builder -->
-
+</form><!-- /.builder -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/npm.js"></script>
 </body><!-- /.food_builder -->
 </html>

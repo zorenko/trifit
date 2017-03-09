@@ -1,15 +1,18 @@
 .editor {
   background: $subheader-bg;
   padding-bottom: 30px;
-}
-
-.editor__form {
   input {
     margin-bottom: 25px;
+    width: 100%;
+  }
+  fieldset {
+    margin-bottom: 20px;
   }
 }
 
-
+.editor__form {
+  padding-right: 40px;
+}
 .editor__headings {
   margin-bottom: 20px;
 }
@@ -22,7 +25,6 @@
 }
 .editor__label {
   display: block;
-  font-weight: normal;
   margin-bottom: 15px;
   &__text {
     display: inline-block;
@@ -49,6 +51,7 @@
 }
 
 
+
 .editor__ingridients {
   input {
     padding: 8px 2px;
@@ -67,7 +70,7 @@
 }
 
 @media (min-width: 768px) {
-  .editor__form {
+  .editor {
     textarea {
       min-height: 490px;
     }
