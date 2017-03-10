@@ -6,12 +6,15 @@ body {
 .food_builder {
   background: #E9EDF0; }
 
-.btn-primary {
+.btn-primary,
+.label-primary,
+.badge {
   background: #5491E7;
   border-color: #5491E7; }
-  .btn-primary:hover, .btn-primary:focus {
-    background: rgba(84, 145, 231, 0.8);
-    border-color: rgba(84, 145, 231, 0.8); }
+
+.btn-primary:hover, .btn-primary:focus {
+  background: rgba(84, 145, 231, 0.8);
+  border-color: rgba(84, 145, 231, 0.8); }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -80,7 +83,8 @@ select {
 .table > thead > tr > td,
 .table > thead > tr > th {
   padding: 0;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  vertical-align: middle; }
 
 .table .table__heading {
   padding: 40px 10px 30px;
@@ -89,19 +93,15 @@ select {
     color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
     padding-top: 45px; }
-  .table .table__heading:first-child {
-    font-size: 20px; }
+  .table .table__heading .results {
+    font-size: 20px;
+    padding-top: 3px;
+    display: inline-block; }
 
 .food_plans .table__plan, .food_plans .table__template,
 .food_templates .table__plan,
 .food_templates .table__template {
   width: 35%; }
-
-.food_plans .table__plan, .food_plans .table__inside, .food_plans .table__trainer,
-.food_templates .table__plan,
-.food_templates .table__inside,
-.food_templates .table__trainer {
-  padding-top: 32px; }
 
 .food_plans .table__inside, .food_plans .table__trainer, .food_plans .table__client, .food_plans .table__create,
 .food_templates .table__inside,
@@ -139,8 +139,7 @@ select {
   width: 30%; }
   .food_recipes .table__recipe__img {
     display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle; }
+    margin-right: 20px; }
   .food_recipes .table__recipe__img img {
     width: 70px;
     height: 70px; }
@@ -148,20 +147,17 @@ select {
     display: inline-block;
     vertical-align: middle; }
   .food_recipes .table__recipe__title {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 8px; }
   .food_recipes .table__recipe__type {
     color: rgba(0, 0, 0, 0.4); }
 
 .food_recipes .table__cal, .food_recipes .table__energy, .food_recipes .table__time, .food_recipes .table__status {
   width: 15%;
-  padding-top: 45px;
   color: rgba(0, 0, 0, 0.4); }
 
 .food_recipes .table__time, .food_recipes .table__status {
   width: 10%; }
-
-.food_recipes .table__status {
-  padding-top: 49px; }
 
 .food_recipes .table .label {
   display: block;
@@ -171,6 +167,30 @@ select {
   border-radius: 20px; }
   .food_recipes .table .label-default {
     background: rgba(0, 0, 0, 0.25); }
+
+.team .table__user {
+  width: 30%; }
+  .team .table__user__img {
+    display: inline-block;
+    margin-right: 20px; }
+  .team .table__user__img img {
+    width: 70px;
+    height: 70px; }
+  .team .table__user__about {
+    display: inline-block;
+    vertical-align: middle; }
+  .team .table__user__name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: normal; }
+  .team .table__user__contact {
+    color: rgba(0, 0, 0, 0.4); }
+
+.team .table__role .label, .team .table__edit .label {
+  padding: 6px 15px;
+  font-size: 12px;
+  border-radius: 50px; }
 
 .navbar {
   background: #2F323B;
@@ -186,7 +206,6 @@ select {
   margin-left: 15px; }
 
 .navbar .badge {
-  background: #5491E7;
   font-weight: normal;
   padding: 4px 10px; }
 

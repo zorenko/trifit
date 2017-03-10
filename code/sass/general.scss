@@ -17,9 +17,13 @@ body {
 .food_builder {
   background: $subheader-bg;
 }
-.btn-primary {
+.btn-primary,
+.label-primary,
+.badge {
   background: $btn-bg;
   border-color: $btn-bg;
+}
+.btn-primary {
   &:hover, &:focus {
     background: $btn-bg-hover;
     border-color: $btn-bg-hover;

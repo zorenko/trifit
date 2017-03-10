@@ -13,6 +13,7 @@
 .table>thead>tr>th {
   padding: 0;
   padding: 20px 10px;
+  vertical-align: middle;
 }
 
 .table .table__heading {
@@ -23,8 +24,10 @@
     font-weight: bold;
     padding-top: 45px;
   }
-  &:first-child {
+  .results{
     font-size: 20px;
+    padding-top: 3px;
+    display: inline-block;
   }
 }
 
@@ -32,9 +35,6 @@
 .food_templates .table {
   &__plan, &__template {
     width: 35%;
-  }
-  &__plan, &__inside, &__trainer {
-  padding-top: 32px;
   }
   &__inside, &__trainer, &__client, &__create {
     width: 25%;
@@ -69,7 +69,6 @@
     &__img {
       display: inline-block;
       margin-right: 20px;
-      vertical-align: middle;
     }
     &__img img {
       width: 70px;
@@ -81,6 +80,7 @@
     }
     &__title {
       margin-top: 0;
+      margin-bottom: 8px;
     }
     &__type {
       color: $text-grey;
@@ -88,14 +88,10 @@
   }
   &__cal, &__energy, &__time, &__status {
     width: 15%;
-    padding-top: 45px;
     color: $text-grey;
   }
   &__time, &__status {
     width: 10%;
-  }
-  &__status {
-    padding-top: 49px;
   }
   .label {
     display: block;
@@ -105,6 +101,40 @@
     border-radius: 20px;
     &-default {
       background: rgba($text-grey, 0.25);
+    }
+  }
+}
+
+.team .table {
+  &__user {
+    width: 30%;
+    &__img {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    &__img img {
+      width: 70px;
+      height: 70px;
+    }
+    &__about {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__name {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    &__contact {
+      color: $text-grey;
+    }
+  }
+  &__role, &__edit {
+    .label {
+      padding: 6px 15px;
+      font-size: 12px;
+      border-radius: 50px;
     }
   }
 }
