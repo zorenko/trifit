@@ -11,3 +11,5 @@
 [Рецепты](https://zorenko.github.io/trifit/code/food_recipes.html)
 
 [Шаблоны](https://zorenko.github.io/trifit/code/food_templates.html)
+
+[Команда](https://zorenko.github.io/trifit/code/team.html)
