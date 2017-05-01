@@ -1,0 +1,183 @@
+.client-info {
+
+  input[type="text"] {
+    border: 1px solid rgba($grey, .3);
+    border-radius: 4px;
+  }
+
+  &.well {
+    padding: 20px 25px;
+  }
+
+  &__heading {
+    padding: 30px 0;
+
+    .text {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &__period {
+      .text {
+        display: block;
+        float: left;
+        width: 50%;
+      }
+      input[type="text"] {
+        display: block;
+        float: left;
+        width: 50%;
+        &:first-of-type {
+          border-radius: 4px 0 0 4px;
+        }
+        &:last-of-type {
+          margin-left: -1px;
+          border-radius: 0 4px 4px 0;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .panel {
+    .table>tbody>tr>td,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>td,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>thead>tr>th {
+      border-color: #eee;
+      padding: 15px 20px;
+
+      &:first-child {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+    .label {
+      font-size: 12px;
+      font-weight: 300;
+      padding: 5px 10px;
+      .glyphicon {
+        margin-right: 10px;
+        top: 2;
+        &-time {
+          font-size: 14px;
+          top: 3;
+        }
+      }
+    }
+    .btn {
+      margin-left: 20px;
+    }
+  }
+  &__personal {
+    .well {
+      padding: 0;
+    }
+    input[type="text"] {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    label {
+      font-weight: 500;
+      display: block;
+    }
+
+    &__data,
+    &__password {
+      padding: 30px 25px;
+    }
+    &__data {
+      border-bottom: 1px solid #eee;
+      .hint {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+    &__password {
+      label {
+        float: left;
+      }
+      a {
+        color: $primary;
+        margin-left: 20px;
+      }
+    }
+  }
+  textarea {
+    background: #F3F3ED;
+    box-shadow: 0 0 3px 0 rgba($grey, .1);
+    line-height: 20px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+  }
+  &__contacts {
+    label {
+      display: block;
+      width: 100%;
+      float: none;
+    }
+    input[type="text"] {
+      width: 87%;
+      float: left;
+      margin-bottom: 15px;
+    }
+    .btn {
+      position: relative;
+      display: block;
+      float: right;
+      width: 37px;
+      height: 37px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: 20px;
+        height: 19px;
+        margin-top: -10px;
+        margin-left: -10px;
+        background-size: 20px auto;
+      }
+
+      &--phone {
+        &::after {
+          width: 21px;
+          height: 21px;
+          margin-top: -11px;
+          background: url("../img/icon-phone.svg");
+        }
+      }
+      &--mail {
+        &::after {
+          width: 22px;
+          height: 18px;
+          margin-top: -9px;
+          margin-left: -11px;
+          background: url("../img/icon-mail.svg");
+        }
+      }
+      &--skype {
+        &::after {
+          width: 22px;
+          height: 21px;
+          margin-top: -11px;
+          margin-left: -11px;
+          background: url("../img/icon-skype.svg");
+        }
+      }
+    }
+  }
+}

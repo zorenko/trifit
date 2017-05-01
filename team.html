@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны питания</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="team">
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand trifit__logo" href="#">Trifit CRM</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Клиенты <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Отчеты<span class="badge">4</span></a></li>
+        <li><a href="#">Заявки<span class="badge">4</span></a></li>
+        <li><a href="team.html">Команда</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Константин<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="subheader">
+  <div class="container">
+    <h1 class="subheader__title"><img src="img/notebook.png" alt="notebook" class="subheader__icon"><span>Команда</span></h1>
+  </div><!-- /.container -->
+</div><!-- /.subheader -->
+
+<div class="results">
+  <div class="container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <td class="table__heading table__user"><span class="results"><span class="results__no">7</span> пользователей</span> <button type="button" class="add__btn btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button></td>
+          <td class="table__heading table__role">Роль</td>
+          <td class="table__heading table__edit"> </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table__user">
+              <span class="table__user__img"><img class="img-circle" src="img/img.jpg" alt="recipe" width="50"></span>
+              <span class="table__user__about"><h4 class="table__user__name">Владимир Мономах</h4><span class="table__user__contact">vova@gmail.com</span></span>
+          </td>
+          <td class="table__role"><span class="label label-success">Администратор</span></td>
+          <td class="table__edit"><button type="button" class="btn btn-default pull-right">Редактировать</button></td>
+        </tr>
+        <tr>
+          <td class="table__user">
+              <span class="table__user__img"><img class="img-circle" src="img/img.jpg" alt="recipe" width="50"></span>
+              <span class="table__user__about"><h4 class="table__user__name">Владимир Мономах</h4><span class="table__user__contact">vova@gmail.com</span></span>
+          </td>
+          <td class="table__role"><span class="label label-primary">Тренер</span></td>
+          <td class="table__edit"><button type="button" class="btn btn-default pull-right">Редактировать</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div><!-- /.container -->
+</div><!-- /.results -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/npm.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.payments {
+  font-size: 16px;
+
+  &.well {
+    padding: 40px 45px;
+  }
+  .label {
+    margin-right: 15px;
+  }
+
+  &__status {
+    margin-bottom: 40px;
+    p {
+      padding-top: 3px;
+    }
+  }
+
+  .table>tbody>tr>td,
+  .table>tbody>tr>th,
+  .table>tfoot>tr>td,
+  .table>tfoot>tr>th,
+  .table>thead>tr>td,
+  .table>thead>tr>th {
+    padding: 15px;
+    border-color: #eee;
+  }
+  .table>thead>tr>td,
+  .table>thead>tr>th {
+    border: none;
+  }
+  &__table {
+    margin-bottom: 0;
+
+    tr>td {
+      font-size: 14px;
+      &:first-child,
+      &:last-child {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    thead>tr {
+      background: $subheader-bg;
+      vertical-align: middle;
+    }
+    thead>tr>td {
+      color: rgba($navbar-bg, .5);
+      &:first-child {
+        color: #000;
+      }
+      &:last-child {
+        font-size: 14px;
+      }
+    }
+    .payments__failure>td {
+      color: $grey;
+      text-decoration: line-through;
+    }
+
+  }
+}

@@ -1,0 +1,180 @@
+.table {
+  background: transparent;
+}
+.table-hover>tbody>tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 0;
+  padding: 20px 10px;
+  vertical-align: middle;
+}
+
+.table .table__heading {
+  padding: 40px 10px 30px;
+  vertical-align: middle;
+  &:not(:first-child) {
+    color: $grey;
+    font-weight: bold;
+    padding-top: 45px;
+  }
+  .results{
+    font-size: 20px;
+    padding-top: 4px;
+    display: inline-block;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.food_plans .table,
+.food_templates .table {
+  &__plan, &__template {
+    width: 35%;
+  }
+  &__inside, &__trainer, &__client, &__create {
+    width: 25%;
+  }
+  &__inside {
+    width: 15%;
+    color: $grey;
+  }
+  &__create {
+    text-align: right;
+  }
+  &__client {
+    position: relative;
+    &__img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    &:not(.table__heading)::after {
+      position: absolute;;
+      content: "для";
+      color: $grey;
+      top: 32px;
+      left: -40px;
+    }
+  }
+}
+
+.trainer_list .table,
+.food_recipes .table {
+  &__recipe,
+  &__client {
+    width: 30%;
+    &__img {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    &__img img {
+      width: 70px;
+      height: 70px;
+    }
+    &__about {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__title {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    &__type {
+      color: $grey;
+    }
+  }
+  &__cal, &__energy, &__time, &__status {
+    width: 15%;
+    color: $grey;
+  }
+  &__time, &__status {
+    width: 10%;
+  }
+}
+
+.team .table {
+  &__user {
+    width: 30%;
+    &__img {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    &__img img {
+      width: 70px;
+      height: 70px;
+    }
+    &__about {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__name {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    &__contact {
+      color: $grey;
+    }
+  }
+  &__role, &__edit {
+    .label {
+      padding: 6px 15px;
+      font-size: 12px;
+      border-radius: 50px;
+    }
+  }
+}
+.trainer_list .table {
+  &__client {
+    width: 25%;
+  }
+  &__stage, &__form, &__report {
+    width: 8%;
+  }
+  &__plans, &__start, &__finish {
+    width: 10%;
+  }
+  &__lastseen {
+    width: 16%;
+  }
+
+  &__plans {
+    .label {
+      float: left;
+    }
+  }
+  &__client__name {
+    display: block;
+    font-size: 16px;
+  }
+  &__client__email {
+    color: $grey;
+  }
+}
+.exercises .table {
+  &__trainings {
+    width: 20%;
+  }
+  &__exercise {
+    width: 30%;
+    overflow: hidden;
+  }
+  &__client,
+  &__trainer {
+    width: 25%;
+  }
+
+  tbody .table__exercise {
+    font-size: 12px;
+  }
+}

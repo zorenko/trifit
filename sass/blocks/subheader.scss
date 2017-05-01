@@ -1,0 +1,154 @@
+.subheader {
+  background: $subheader-bg;
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    > span,
+    .add__btn {
+      vertical-align: middle;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  &__info {
+    .label {
+      margin-top: 3px;
+    }
+  }
+  &__status {
+    .no {
+      display: block;
+      font-size: 28px;
+      font-weight: 200;
+      color: #000;
+    }
+    .text {
+      color: $primary;
+    }
+    &__title {
+      color: #000;
+      font-weight: bold;
+      text-align: left;
+      display: block;
+      padding-bottom: 10px;
+    }
+    &__period {
+      font-weight: 300;
+      color: $grey;
+      display: block;
+      font-size: 12px;
+    }
+  }
+  &__client {
+    font-size: 28px;
+    font-weight: 300;
+    &__name,
+    &__age {
+      margin-right: 10px;
+    }
+    &__age {
+      color: $grey;
+    }
+    &__moreinfo {
+      font-size: 16px;
+      color: $grey;
+      font-weight: normal;
+      margin-top: 5px;
+    }
+  }
+  &__social {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    &--fb {
+      background: url("../img/icon-fb.svg");
+    }
+    &--ig {
+      background: url("../img/icon-ig.svg");
+    }
+  }
+}
+
+
+.nav-pills {
+  margin-top: 40px;
+}
+.nav-pills>.subheader__btn {
+  margin: 0;
+  >a {
+    color: #000;
+    padding: 6px 25px;
+    border: 1px solid $grey-hover;
+    border-radius: 0;
+    &:focus, &:hover {
+      background: $primary;
+      border-color: $primary;
+      color: #fff;
+    }
+  }
+  &:first-child>a {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  &:last-child>a {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  &:not(:first-child)>a {
+    margin-left: -1px;
+  }
+  &.active>a {
+    background: $primary;
+    border-color: $primary;
+    cursor: default;
+    &:focus, &:hover {
+      background: $primary;
+      border-color: $primary;
+    }
+  }
+}
+
+.trainer_list {
+  .subheader {
+    &__status {
+      text-align: right;
+      width: 20%;
+    }
+  }
+
+}
+.trainer_client {
+  .subheader {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 992px) {
+  .subheader {
+    .container {
+      padding: 60px 0;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    &__info {
+      .row {
+        align-items: flex-start;
+      }
+    }
+  }
+  .trainer_client {
+    .subheader {
+      .container {
+        padding: 50px 0;
+      }
+    }
+  }
+}

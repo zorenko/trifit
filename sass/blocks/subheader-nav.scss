@@ -1,0 +1,41 @@
+.subheader-nav {
+  background: $subheader-bg;
+  border-bottom: 1px solid #ccc;
+  .nav-tabs {
+    border: none;
+  }
+  .nav-tabs>li>a {
+    border: none;
+    border-radius: 0;
+    padding: 14px 25px 10px;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:focus,
+  .nav-tabs>li.active>a:hover,
+  .nav-tabs>li>a:hover {
+    color: #000;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid $primary;
+  }
+  .nav>li>a:focus,
+  .nav>li>a:hover {
+    background-color: transparent;
+  }
+  a,
+  .nav-tabs>li>a:hover {
+    color: $grey;
+  }
+  .badge {
+    background: $grey;
+    border-color: $grey;
+    font-size: 11px;
+    font-weight: normal;
+    vertical-align: middle;
+    margin-left: 7px;
+  }
+  .glyphicon {
+    top: 0px;
+    font-size: 9px;
+  }
+}

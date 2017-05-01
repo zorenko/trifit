@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Редактор питания</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="food_builder">
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand trifit__logo" href="#">Trifit CRM</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Клиенты <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Отчеты<span class="badge">4</span></a></li>
+        <li><a href="#">Заявки<span class="badge">4</span></a></li>
+        <li><a href="team.html">Команда</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Константин<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<form class="builder" name="builder" method="" action="">
+  <fieldset class="builder__header">
+    <div class="container">
+      <input class="builder__header__search" type="search" name="" value="" placeholder="Название плана">
+      <button type="button" class="btn btn-primary builder__header__preview pull-left">Предпросмотр</button>
+      <div class="btn-group pull-left">
+        <button type="button" class="btn btn-primary">Сохранить</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Создать копию</a></li>
+          <li><a href="#">Сохранить как шаблон</a></li>
+        </ul>
+      </div><!-- /.btn-group -->
+    </div><!-- /.container -->
+  </fieldset><!-- /.builder__header -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="builder__filter">
+          <fieldset>
+            <div class="builder__filter__search">
+              <span class="glyphicon glyphicon-search"></span>
+              <input type="text" name="" value="" placeholder="Поиск">
+            </div>
+            <select>
+              <option value="">Суп</option>
+              <option value="">Второе</option>
+              <option value="">Салат</option>
+              <option value="">Компот</option>
+            </select>
+            <div class="builder__result">
+              <h6 class="builder__result__heading">Заголовок</h6>
+              <span class="builder__result__descr">327 ккал / 100 г</span>
+              <span class="glyphicon glyphicon-plus"></span>
+            </div><!-- /.builder__result -->
+          </fieldset>
+        </div><!-- /.builder__search -->
+      </div>
+
+      <div class="col-xs-12 col-md-8">
+        <div class="builder__body">
+          <div class="builder__client">
+            <img src="img/img.jpg" alt="" class="builder__client__img img-circle">
+            <div class="builder__client__info">
+              <div class="line"><span class="client__name">Михаил Марченко</span>, <span class="client__age">21</span></div>
+              <div class="line"><span class="client__about">Преподаватель химии, Уфа</span></div>
+            </div><!-- /.builder__client__info -->
+          </div><!-- /.builder__client -->
+
+          <div class="builder__text">
+            <a href="#" class="builder__text__set">Задать поясняющий текст</a>
+            <a href="#" class="builder__text__delete">Убрать поясняющий текст</a>
+            <textarea name="name" rows="4" cols="80"></textarea>
+          </div><!-- /.builder__text -->
+
+          <div class="builder__content">
+            <div class="builder__content__heading">
+              <div class="row">
+                <div class="col-xs-12 col-sm-5"></div>
+                <div class="col-xs-12 col-sm-2">Грамм</div>
+                <div class="col-xs-12 col-sm-2">Ккал</div>
+                <div class="col-xs-12 col-sm-2">БЖУ</div>
+              </div>
+            </div><!-- /.builder__content__heading -->
+
+            <div class="builder__dish--empty"><span>Добавьте первый рецепт, выбрав его на панели слева</span></div>
+
+            <div class="builder__dish builder__dish--closed">
+              <div class="builder__dish__header">
+                <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <input type="text" placeholder="Название блюда">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="100">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="327">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="10 – 20 – 53">
+                  </div>
+                </div>
+                <a href="#" class="glyphicon glyphicon-remove"></a>
+                <a href="#" class="glyphicon glyphicon-chevron-down"></a>
+              </div><!-- /.builder__dish__header -->
+
+              <div class="builder__dish builder__dish__dropdown">
+                <label class="ingridient">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                      <input type="checkbox" id="ingridient" name="ingridient" value="" checked>Ингридиент
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="100">
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="327">
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="10 – 20 – 53">
+                    </div>
+                  </div><!-- /.row -->
+                </label><!-- /.ingridient -->
+                <div class="row"><div class="comment"><label for="comment">Комментарий</label><textarea id="comment" name="name" rows="4" cols="80"></textarea></div></div>
+              </div><!-- /.builder__dish__dropdown -->
+            </div><!-- /.builder__dish-closed -->
+
+            <div class="builder__dish builder__dish--opened">
+              <div class="builder__dish__header">
+                <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <input type="text" placeholder="Название блюда">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="100">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="327">
+                  </div>
+                  <div class="col-xs-12 col-sm-2">
+                    <input type="text" placeholder="10 – 20 – 53">
+                  </div>
+                </div>
+                <a href="#" class="glyphicon glyphicon-remove"></a>
+                <a href="#" class="glyphicon glyphicon-chevron-down"></a>
+              </div><!-- /.builder__dish__header -->
+              <div class="builder__dish builder__dish__dropdown">
+                <label class="ingridient">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                      <input type="checkbox" id="ingridient" name="ingridient" value="" checked>Ингридиент
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="100">
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="327">
+                    </div>
+                    <div class="col-xs-12 col-sm-1">
+                      <input type="text" placeholder="10">
+                    </div>
+                    <div class="col-xs-12 col-sm-1">
+                      <input type="text" placeholder="10">
+                    </div>
+                    <div class="col-xs-12 col-sm-1">
+                      <input type="text" placeholder="10">
+                    </div>
+                  </div><!-- /.row -->
+                </label><!-- /.ingridient -->
+                <label class="ingridient">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                      <input type="checkbox" id="ingridient" name="ingridient" value="" checked>Ингридиент
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="100">
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                      <input type="text" placeholder="327">
+                    </div>
+                    <div class="col-xs-12 col-sm-1">
+                      <input type="text" placeholder="10">
+                    </div>
+                    <div class="col-xs-12 col-sm-1">
+                      <input type="text" placeholder="10">
+                    </div>
+                    <div class="col-xs-12 col-sm-1">
+                      <input type="text" placeholder="10">
+                    </div>
+                  </div><!-- /.row -->
+                </label><!-- /.ingridient -->
+                <div class="row"><div class="comment"><label for="comment">Комментарий</label><textarea id="comment" name="name" rows="4" cols="80"></textarea></div></div>
+              </div><!-- /.builder__dish__dropdown -->
+            </div><!-- /.builder__dish-opened -->
+
+          </div><!-- /.builder__content -->
+        </div><!-- /.builder__body -->
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+</form><!-- /.builder -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/npm.js"></script>
+</body><!-- /.food_builder -->
+</html>

@@ -1,0 +1,158 @@
+.client-report {
+
+  &.well {
+    padding: 20px 25px;
+  }
+  &__heading {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin: 0;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 30px;
+    padding-top: 5px;
+  }
+  &__date {
+    color: $grey;
+    display: inline-block;
+    padding-top: 7px;
+  }
+  &__status {
+    float: right;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  &__form {
+
+  }
+
+  &__panel {
+    box-shadow: none;
+    .panel-heading {
+      cursor: pointer;
+      position: relative;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      padding: 10px 15px;
+      color: $grey;
+      .glyphicon {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+      }
+    }
+    &--closed {
+      .panel-body {
+        display: none;
+      }
+      .glyphicon-chevron-up {
+        display: none;
+      }
+    }
+    &--opened {
+      .panel-heading {
+        border-bottom: transparent;
+        border-radius: 3px 3px 0 0;
+      }
+      .panel-body {
+        display: block;
+        border: 1px solid #eee;
+        border-radius: 0 0 3px 3px;
+      }
+      .glyphicon-chevron-down {
+        display: none;
+      }
+    }
+  }
+
+  &__radio {
+    position: relative;
+    margin: 0;
+    margin-right: 20px;
+    padding-left: 25px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 3px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border: 1px solid $grey;
+      border-radius: 50%;
+    }
+
+    &--accepted {
+      color: $success;
+      &::after {
+        border-color: $success;
+      }
+      &::before {
+        background-color: $success;
+      }
+      &:hover {
+        color: $success-hover;
+        &::after {
+          border-color: $success-hover;
+        }
+        &::before {
+          background-color: $success-hover;
+        }
+      }
+    }
+    &--declined {
+      color: $danger;
+      &::after {
+        border-color: $danger;
+      }
+      &::before {
+        background-color: $danger;
+      }
+      &:hover {
+        color: $danger-hover;
+        &::after {
+          border-color: $danger-hover;
+        }
+        &::before {
+          background-color: $danger-hover;
+        }
+      }
+    }
+    &--pending {
+      color: $warning;
+      &::after {
+        border-color: $warning;
+      }
+      &::before {
+        background-color: $warning;
+      }
+      &:hover {
+        color: $warning-hover;
+        &::after {
+          border-color: $warning-hover;
+        }
+        &::before {
+          background-color: $warning-hover;
+        }
+      }
+    }
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="radio"]:checked + label::before {
+    top: 7px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    z-index: 1;
+    border: none;
+  }
+}
