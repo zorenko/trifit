@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Заполните анкету</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="user_report">
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand trifit__logo" href="#">Trifit CRM</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="#">Анкеты</a></li>
+        <li><a href="#">Планы</a></li>
+        <li><a href="#">Платежи</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Константин<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="alert alert-warning">
+  Некоторые поля не заполнены. Заполните, пожалуйста
+</div>
+
+<section class="subheader">
+  <h1>Заполните анкету</h1>
+  <span>Для программы Trifit 21 day</span>
+</section>
+
+<section class="report">
+  <div class="container clearfix">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <h3>Стартовая анкета</h3>
+        <div class="report__steps">
+          <div class="report__step report__step--complete">Аккаунт</div>
+            <div class="report__step report__step--current">Личные данные и фото</div>
+            <div class="report__step">Здоровье</div>
+            <div class="report__step">Дефицит питательных веществ</div>
+            <div class="report__step">Образ жизни</div>
+            <div class="report__step">Готово</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h3>Дефицит питательных веществ</h3>
+        <form class="" action="index.html" method="post">
+          <label for="">Имя Фамилия</label>
+          <input type="text" name="" value="">
+
+          <label for="">Город</label>
+          <input type="text" name="" value="">
+
+          <label for="">Дата рождения</label>
+          <input type="text" name="" value="">
+
+          <label for="">Email</label>
+          <input type="text" name="" value="">
+
+          <label for="">Телефон</label>
+          <input type="text" name="" value="">
+
+          <label for="">Профиль в Instagram</label>
+          <input type="text" name="" value="">
+
+          <label for="">Рост</label>
+          <input type="text" name="" value="">
+        </form>
+        <button type="button" name="button" class="btn btn-default">Назад</button>
+        <button type="button" name="button" class="btn btn-primary">Дальше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="old-reports">
+  <h2>Заполненные анкеты</h2>
+
+  <div class="panel panel-default old-reports__panel">
+    <table class="table panel-heading">
+      <tr>
+        <td class="table__time">
+          26 апреля
+          <span class="table__comment">Первичная анкета</span>
+        </td>
+        <td class="table__weight">
+          62 кг
+          <span class="table__comment">Вес</span>
+        </td>
+        <td class="table__chest">
+          82 см
+          <span class="table__comment">Объем груди</span>
+        </td>
+        <td class="table__waist">
+          53 см
+          <span class="table__comment">Объем талии</span>
+        </td>
+        <td class="table__hips">
+          82 см
+          <span class="table__comment">Объем бедер</span>
+        </td>
+        <td class="table__icon">
+          <span class="label label-success label--round label--big label--check"> </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+</section>
+
+</body>
+</html>

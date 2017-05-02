@@ -1,5 +1,3 @@
 [Объекты](objects.md)
 
-
-# Верстка
-[Здесь](https://zorenko.github.io/trifit/index.html)
+Верстка [здесь](https://zorenko.github.io/trifit/index.html)
