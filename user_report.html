@@ -2,31 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Заполните анкету</title>
+  <title>Заполнение анкеты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body class="user_report">
+<body class="user user-basic user-report">
 
-<nav class="navbar navbar-inverse">
-  <div class="container">
+<nav class="user-navbar navbar navbar-inverse">
+  <div class="container clearfix">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand trifit__logo" href="#">Trifit CRM</a>
+      <a class="navbar-brand trifit__logo" href="#">
+        <img src="img/logo.svg" alt="Логотип Trifit">
+      </a>
+      <a href="#" class="user-navbar__btn user-navbar__btn--profile">Профиль</a>
+      <a href="#" class="user-navbar__btn user-navbar__btn--logout">Выход</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-center">
-        <li><a href="#">Анкеты</a></li>
-        <li><a href="#">Планы</a></li>
-        <li><a href="#">Платежи</a></li>
+        <li class="active"><a href="#">Анкеты</a></li>
+        <li ><a href="#">Планы</a></li>
+        <li ><a href="#">Платежи</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -44,34 +43,39 @@
   </div><!-- /.container -->
 </nav>
 
-<div class="alert alert-warning">
+<div class="user__alert alert alert-danger">
   Некоторые поля не заполнены. Заполните, пожалуйста
 </div>
+<div class="user__alert alert alert-success">
+  Анкета отправлена на проверку. Заходите через пару дней!
+</div>
 
-<section class="subheader">
-  <h1>Заполните анкету</h1>
-  <span>Для программы Trifit 21 day</span>
+<section class="user-basic__subheader">
+  <div class="container clearfix">
+    <h1 class="user-basic__title">Заполнение анкеты</h1>
+    <span class="user-basic__text">Для программы Trifit 21 day</span>
+  </div>
 </section>
 
-<section class="report">
-  <div class="container clearfix">
+<section class="user-report__form">
+  <div class="user-report__wrapper container clearfix">
     <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <h3>Стартовая анкета</h3>
-        <div class="report__steps">
-          <div class="report__step report__step--complete">Аккаунт</div>
-            <div class="report__step report__step--current">Личные данные и фото</div>
-            <div class="report__step">Здоровье</div>
-            <div class="report__step">Дефицит питательных веществ</div>
-            <div class="report__step">Образ жизни</div>
-            <div class="report__step">Готово</div>
+      <div class="col-xs-12 col-sm-4 user-report__nav">
+        <h3 class="user-report__title">Стартовая анкета</h3>
+        <div class="steps clearfix">
+          <div class="step step--completed">Аккаунт</div>
+            <div class="step step--completed step--active">Личные данные и фото</div>
+            <div class="step step--current">Здоровье</div>
+            <div class="step">Дефицит питательных веществ</div>
+            <div class="step">Образ жизни</div>
+            <div class="step step--completed">Готово</div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-8">
-        <h3>Дефицит питательных веществ</h3>
+      <div class="col-xs-12 col-sm-8 user-report__fields">
+        <h3 class="user-report__title">Дефицит питательных веществ</h3>
         <form class="" action="index.html" method="post">
           <label for="">Имя Фамилия</label>
-          <input type="text" name="" value="">
+          <input type="text" name="" value="" required>
 
           <label for="">Город</label>
           <input type="text" name="" value="">
@@ -98,40 +102,356 @@
   </div>
 </section>
 
-<section class="old-reports">
-  <h2>Заполненные анкеты</h2>
-
-  <div class="panel panel-default old-reports__panel">
-    <table class="table panel-heading">
-      <tr>
-        <td class="table__time">
-          26 апреля
-          <span class="table__comment">Первичная анкета</span>
-        </td>
-        <td class="table__weight">
-          62 кг
-          <span class="table__comment">Вес</span>
-        </td>
-        <td class="table__chest">
-          82 см
-          <span class="table__comment">Объем груди</span>
-        </td>
-        <td class="table__waist">
-          53 см
-          <span class="table__comment">Объем талии</span>
-        </td>
-        <td class="table__hips">
-          82 см
-          <span class="table__comment">Объем бедер</span>
-        </td>
-        <td class="table__icon">
-          <span class="label label-success label--round label--big label--check"> </span>
-        </td>
-      </tr>
-    </table>
+<section class="user-report__form">
+  <div class="user-report__wrapper container clearfix">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 user-report__nav">
+        <h3 class="user-report__title">Стартовая анкета</h3>
+        <div class="steps clearfix">
+          <div class="step step--current step--active">Аккаунт</div>
+            <div class="step">Личные данные и фото</div>
+            <div class="step">Здоровье</div>
+            <div class="step">Дефицит питательных веществ</div>
+            <div class="step">Образ жизни</div>
+            <div class="step">Готово</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 user-report__fields">
+        <h3 class="user-report__title">Создание аккаунта</h3>
+        <form class="" action="index.html" method="post">
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="">Имя Фамилия</label>
+              <input type="text" name="" value="" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <label for="">Город</label>
+              <input type="text" name="" value="">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <label for="">Дата рождения</label>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <label for="">Email</label>
+              <input type="text" name="" value="">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <label for="">Телефон</label>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <label for="">Профиль в Instagram</label>
+              <span>Для того, чтобы мы могли быть с вами  на связи</span>
+              <input type="text" name="" value="">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <label for="">Профиль в Facebook</label>
+              <span>Для того, чтобы мы могли быть с вами  на связи</span>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+        </form>
+        <button type="button" name="button" class="btn btn-default">Назад</button>
+        <button type="button" name="button" class="btn btn-primary">Дальше</button>
+      </div>
+    </div>
   </div>
+</section>
 
+<section class="user-report__form">
+  <div class="user-report__wrapper container clearfix">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 user-report__nav">
+        <h3 class="user-report__title">Стартовая анкета</h3>
+        <div class="steps clearfix">
+          <div class="step step--completed">Аккаунт</div>
+            <div class="step step--current step--active">Личные данные и фото</div>
+            <div class="step">Здоровье</div>
+            <div class="step">Дефицит питательных веществ</div>
+            <div class="step">Образ жизни</div>
+            <div class="step">Готово</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 user-report__fields">
+        <h3 class="user-report__title">Данные и фото</h3>
 
+        <form class="" action="index.html" method="post">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <label for="">Рост</label>
+              <input type="text" name="" value="">
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <label for="">Вес</label>
+              <input type="text" name="" value="">
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <label for="">Желаемый вес</label>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                Загрузите ваши фотографии в нижнем белье или одежде для плавания, они нужны для оценки состава тела и подбора оптимального плана питания и тренировок. Ваши фотографии увидит только специалист, составляющий программу. Обязательное поле.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 user-report__item">
+              <label for="">Фото спереди</label>
+              <div class="client-report-compare__photo user-report__photo">
+                <span class="title">Фото сбоку</span>
+                <span class="text">обязательно</span>
+                <img src="img/img.jpg" alt="Фото клиента" >
+              </div>
+              <div class="user__alert alert alert-danger">Обязательное поле</div>
+              <button type="button" name="button" class="btn btn-primary btn-sm">Загрузить</button>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 user-report__item">
+              <label for="">Фото спереди</label>
+              <div class="client-report-compare__photo user-report__photo">
+                <span class="title">Фото сбоку</span>
+                <span class="text">обязательно</span>
+                <img src="img/img.jpg" alt="Фото клиента" >
+              </div>
+              <div class="user__alert alert alert-danger">Обязательное поле</div>
+              <button type="button" name="button" class="btn btn-primary btn-sm">Загрузить</button>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 user-report__item">
+              <label for="">Фото спереди</label>
+              <div class="client-report-compare__photo user-report__photo">
+                <span class="title">Фото сбоку</span>
+                <span class="text">обязательно</span>
+                <!-- <img src="img/img.jpg" alt="Фото клиента" > -->
+              </div>
+              <!-- <div class="user__alert alert alert-danger">Обязательное поле</div> -->
+              <button type="button" name="button" class="btn btn-primary btn-sm">Загрузить</button>
+            </div>
+          </div>
+        </form>
+        <button type="button" name="button" class="btn btn-default">Назад</button>
+        <button type="button" name="button" class="btn btn-primary">Дальше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="user-report__form">
+  <div class="user-report__wrapper container clearfix">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 user-report__nav">
+        <h3 class="user-report__title">Стартовая анкета</h3>
+        <div class="steps clearfix">
+          <div class="step step--completed">Аккаунт</div>
+            <div class="step step--completed">Личные данные и фото</div>
+            <div class="step step--completed">Здоровье</div>
+            <div class="step step--current step--active">Дефицит питательных веществ</div>
+            <div class="step">Образ жизни</div>
+            <div class="step">Готово</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 user-report__fields">
+        <h3 class="user-report__title">Дефицит питательных веществ</h3>
+        <form class="" action="index.html" method="post">
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox1">
+              <label for="deficit__checkbox1" class="checkbox">Язвы в полости рта</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox2">
+              <label for="deficit__checkbox2" class="checkbox">Прыщи</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox3">
+              <label for="deficit__checkbox3" class="checkbox">Частые простуды или инфекционные заболевания</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox4">
+              <label for="deficit__checkbox4" class="checkbox">Молочница или цистит</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox5">
+              <label for="deficit__checkbox5" class="checkbox">Диарея</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox6">
+              <label for="deficit__checkbox6" class="checkbox">Ревматизм и артрит</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="deficit__checkbox7">
+              <label for="deficit__checkbox7" class="checkbox">Боль в спине</label>
+            </div>
+          </div>
+        </form>
+        <button type="button" name="button" class="btn btn-default">Назад</button>
+        <button type="button" name="button" class="btn btn-primary">Дальше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="user-report__form">
+  <div class="user-report__wrapper container clearfix">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 user-report__nav">
+        <h3 class="user-report__title">Стартовая анкета</h3>
+        <div class="steps clearfix">
+          <div class="step step--completed">Аккаунт</div>
+            <div class="step step--completed">Личные данные и фото</div>
+            <div class="step step--completed">Здоровье</div>
+            <div class="step step--completed">Дефицит питательных веществ</div>
+            <div class="step step--current step--active">Образ жизни</div>
+            <div class="step">Готово</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 user-report__fields">
+        <h3 class="user-report__title">Образ жизни</h3>
+        <form class="" action="index.html" method="post">
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="lifestyle__checkbox1" checked>
+              <label for="lifestyle__checkbox1" class="checkbox">Кровяное давление выше 140/90</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="lifestyle__checkbox2">
+              <label for="lifestyle__checkbox2" class="checkbox">Пульс после 15 минут покоя выше 75</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="lifestyle__checkbox3">
+              <label for="lifestyle__checkbox3" class="checkbox">Вес превышает желаемый вес более, чем на 7 кг</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="lifestyle__checkbox4">
+              <label for="lifestyle__checkbox4" class="checkbox">Курите более 5 сигарет в день</label>
+            </div>
+
+            <div class="col-xs-12">
+              <input type="checkbox" name="checkbox" value="" id="lifestyle__checkbox5">
+              <label for="lifestyle__checkbox5" class="checkbox">Едите красное мясо чаще 5 раз в неделю</label>
+            </div>
+          </div>
+        </form>
+        <button type="button" name="button" class="btn btn-default">Назад</button>
+        <button type="button" name="button" class="btn btn-primary">Дальше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="old-reports container">
+  <div class="row">
+    <h2 class="old-reports__title">Заполненные анкеты</h2>
+
+    <div class="panel panel-default old-reports__panel">
+      <table class="table">
+        <tr>
+          <td class="table__time">
+            26 апреля
+            <span class="table__comment">Первичная анкета</span>
+          </td>
+          <td class="table__weight">
+            62 кг
+            <span class="table__comment">Вес</span>
+          </td>
+          <td class="table__chest">
+            82 см
+            <span class="table__comment">Объем груди</span>
+          </td>
+          <td class="table__waist">
+            53 см
+            <span class="table__comment">Объем талии</span>
+          </td>
+          <td class="table__hips">
+            82 см
+            <span class="table__comment">Объем бедер</span>
+          </td>
+          <td class="table__icon">
+            <span class="label label-success label--round label--big label--check"> </span>
+          </td>
+        </tr>
+      </table>
+
+      <table class="table">
+        <tr>
+          <td class="table__time">
+            26 апреля
+            <span class="table__comment">Первичная анкета</span>
+          </td>
+          <td class="table__weight">
+            62 кг
+            <span class="table__comment">Вес</span>
+          </td>
+          <td class="table__chest">
+            82 см
+            <span class="table__comment">Объем груди</span>
+          </td>
+          <td class="table__waist">
+            53 см
+            <span class="table__comment">Объем талии</span>
+          </td>
+          <td class="table__hips">
+            82 см
+            <span class="table__comment">Объем бедер</span>
+          </td>
+          <td class="table__icon">
+            <span class="label label-success label--round label--big label--check"> </span>
+          </td>
+        </tr>
+      </table>
+
+      <table class="table">
+        <tr>
+          <td class="table__time">
+            26 апреля
+            <span class="table__comment">Первичная анкета</span>
+          </td>
+          <td class="table__weight">
+            62 кг
+            <span class="table__comment">Вес</span>
+          </td>
+          <td class="table__chest">
+            82 см
+            <span class="table__comment">Объем груди</span>
+          </td>
+          <td class="table__waist">
+            53 см
+            <span class="table__comment">Объем талии</span>
+          </td>
+          <td class="table__hips">
+            82 см
+            <span class="table__comment">Объем бедер</span>
+          </td>
+          <td class="table__icon">
+            <span class="label label-success label--round label--big label--check"> </span>
+          </td>
+        </tr>
+      </table>
+    </div><!-- /.old-reports__panel -->
+  </div><!-- /.row -->
 </section>
 
 </body>

@@ -230,6 +230,17 @@ a {
     background-size: 14px 14px;
   }
 }
+.btn--time,
+.label--time {
+  &::after {
+    height: 18px;
+    width: 18px;
+    margin-top: -9px;
+    margin-left: -9px;
+    background: url(../img/icon-time.svg);
+    background-size: 18px 18px;
+  }
+}
 
 .dropdown-menu label {
   display: block;
@@ -242,4 +253,8 @@ a {
   border: none;
   background: #fff;
   box-shadow: 0 0 3px 0 rgba($grey, .1);
+}
+
+.trifit__logo img {
+  width: 170px;
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ваша программа</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="user user-basic user-plans">
+
+<nav class="user-navbar navbar navbar-inverse">
+  <div class="container clearfix">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand trifit__logo" href="#">
+        <img src="img/logo.svg" alt="Логотип Trifit">
+      </a>
+      <a href="#" class="user-navbar__btn user-navbar__btn--profile">Профиль</a>
+      <a href="#" class="user-navbar__btn user-navbar__btn--logout">Выход</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-center">
+        <li ><a href="#">Анкеты <span class="label label-danger label--round"> </span></a></li>
+        <li class="active"><a href="#">Планы</a></li>
+        <li><a href="#">Платежи</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Константин<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="user__alert alert alert-success">
+  Пора заполнить Анкету с результатами и подвести итоги! <a href="#" class="btn btn-default">Заполнить</a>
+</div>
+
+<section class="user-basic__subheader">
+  <div class="container clearfix">
+    <h1 class="user-basic__title">Ваша программа</h1>
+  </div>
+</section>
+
+<div class="user-plans__wrapper">
+  <section class="user-plan user-plan--progress container">
+    <div class="user-plan__header">
+      <span>17 марта — 4 апреля</span>
+    </div>
+    <div class="user-plan__body">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 user-plan__content">
+          <span class="user-plan__no">1</span>
+          <h3 class="user-plan__title">
+            <span>Питание</span>
+            <span class="label label-primary label--round label--big label--time"> </span>
+          </h3>
+          <p>Ваш план будет готов примерно 22 января</p>
+          <a href="#" class="btn btn-primary">Скачать в pdf</a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 user-plan__content">
+          <span class="user-plan__no">2</span>
+          <h3 class="user-plan__title">
+            <span>Тренировки</span>
+            <span class="label label-primary label--round label--big label--time"> </span>
+          </h3>
+          <p>Ваш план будет готов примерно 22 января</p>
+          <a href="#" class="btn btn-primary">Скачать в pdf</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="user-plan user-plan--ready container">
+    <div class="user-plan__header">
+      <span>17 марта — 4 апреля</span>
+    </div>
+    <div class="user-plan__body">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 user-plan__content">
+          <span class="user-plan__no">1</span>
+          <h3 class="user-plan__title">
+            <span>Питание</span>
+            <span class="label label-primary label--round label--big label--time"> </span>
+          </h3>
+          <p>Ваш план будет готов примерно 22 января</p>
+          <a href="#" class="btn btn-primary">Скачать в pdf</a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 user-plan__content">
+          <span class="user-plan__no">2</span>
+          <h3 class="user-plan__title">
+            <span>Тренировки</span>
+            <span class="label label-primary label--round label--big label--time"> </span>
+          </h3>
+          <p>Ваш план будет готов примерно 22 января</p>
+          <a href="#" class="btn btn-primary">Скачать в pdf</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /.user-plans__wrapper -->
+
+</body>
+</html>

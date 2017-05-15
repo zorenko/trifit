@@ -1,0 +1,28 @@
+.user {
+
+  &__alert {
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    text-align: center;
+
+    &.alert-danger {
+      background: #F07E4F;
+      background-image: linear-gradient(to right bottom, #F07E4F, #BE3342);
+    }
+
+    &.alert-success {
+      background: #00AD7B;
+      background-image: linear-gradient(to right, #C6DA7B, #00AD7B, #009897);
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .user {
+    &__alert {
+      padding: 8px 10px;
+    }
+  }
+}
