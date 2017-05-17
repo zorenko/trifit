@@ -59,9 +59,7 @@
 
       &__status {
         padding: 25px 20px;
-      }
 
-      &__status {
         p {
           margin: 0;
           font-size: 14px;
@@ -71,19 +69,35 @@
         .label {
           float: right;
           margin: 0;
-          margin-top: 8px;
         }
       }
 
       &__btn {
         display: block;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 20px;
       }
 
       &__table-wrapper {
         padding: 0;
       }
+    }
+  }
+}
+@media (max-width: 337px) {
+  .user-payments {
+    .payments .payments__status .label {
+      margin-top: 8px;
+    }
+  }
+}
+@media (max-width: 433px) {
+  .user-payments {
+    .payments:first-child .payments__status .label {
+      margin-top: 8px;
+    }
+
+    .payments {
       &__table {
         thead>tr>td:not(:first-child),
         .payment__date {
@@ -98,14 +112,21 @@
         .payment__period {
           display: block;
           float: left;
+          width: 100%;
         }
 
         .payment__period  {
           border: 0;
           padding-top: 0;
         }
-
       }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .user-payments {
+    .payment__date {
+      display: none;
     }
   }
 }

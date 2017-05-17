@@ -163,7 +163,7 @@
     .alert {
       border-radius: 50px;
       padding: 5px;
-      margin-bottom: 20px !important;
+      margin-bottom: 15px !important;
     }
 
     p {
@@ -213,7 +213,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .user-report {
     &__wrapper {
       width: 95%;

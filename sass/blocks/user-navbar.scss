@@ -34,9 +34,13 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .user-navbar {
     background: rgba($navbar-bg, .9);
+
+    .nav.navbar-center>li>a {
+      padding: 10px 20px;
+    }
 
     .navbar-header {
       position: relative;
