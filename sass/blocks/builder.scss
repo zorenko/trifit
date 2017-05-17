@@ -2,30 +2,129 @@
   padding-bottom: 50px;
 }
 
+
 .builder__header {
   padding: 15px 0;
   background: rgba($navbar-bg, .8);
-  > .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__search {
-    float: left;
-    margin-right: 20px;
-    flex-grow: 10;
-  }
-  &__preview {
-    background: rgba($navbar-bg, .5);
-    margin-right: 20px;
-    &:hover, &:active, &:focus {
-      background: rgba($navbar-bg, .7);
-    }
-  }
+
   .btn {
     border: none;
-    padding: $padding;
+    padding: 7px 15px;
+  }
+
+  &__client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+
+    .btn.btn-primary {
+      background: transparent;
+      border: 1px solid rgba(#fff, .5);
+      color: #fff;
+    }
+
+    &--choose {
+      display: none;
+
+      .btn {
+        flex-grow: 1;
+      }
+    }
+
+    &--list {
+      display: none;
+
+      input {
+        flex-grow: 1;
+      }
+    }
+
+    &--one {
+      // display: none;
+
+      img {
+        max-width: 34px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .btn.btn-primary {
+        flex-grow: 1;
+        padding: 5px 10px;
+        text-align: left;
+      }
+
+      .glyphicon {
+        margin-left: 10px;
+        float: right;
+        top: 3px;
+      }
+    }
+  }
+
+  &__status {
+
+    .btn-group,
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+
+      .caret {
+        float: right;
+        margin-top: 8px;
+      }
+    }
+
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .wrapper {
+      margin-right: 10px;
+    }
+
+    input {
+      background-color: rgba(#fff, 0.1);
+
+
+      &:focus,
+      &:active {
+        background-color: #fff;
+      }
+    }
+
+    > .btn {
+      font-size: 0;
+      padding: 7px 20px;
+      height: 34px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &--preview {
+        background-image: url("../img/icon-eye.svg");
+        background-size: 20px 14px;
+      }
+
+      &--delete {
+        background-image: url("../img/icon-trash.svg");
+        background-size: 17px 19px;
+        background-color: transparent;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-image: url("../img/icon-trash-hover.svg");
+        }
+      }
+    }
   }
 }
+
 .builder__filter {
   padding: 40px 0;
   &__search {
@@ -91,6 +190,35 @@
 .builder__body {
   border-left: 1px solid rgba($grey, .1);
   padding: 40px 0 40px 40px;
+}
+
+.builder__delete {
+  width: 424px;
+  height: 118px;
+  padding:20px;
+  border-radius:5px;
+  background-color: #F2DEDE;
+  margin: 20px;
+  &__title {
+    color:#B94A48;
+    font-weight: 600;
+  }
+  &__buttons {
+    &--delete {
+      background-color: black;
+      border-color: grey;
+      color:white;
+    }
+    &--cancel {
+      background-color: transparent;
+      border-color: grey;
+      color:black
+    }
+    margin-top: 25px;
+  }
+  .hidden {
+    display: none;
+  }
 }
 
 .builder__client {
