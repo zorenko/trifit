@@ -64,11 +64,11 @@
         <div class="col-xs-12 col-md-4">
           <div class="row">
 
-            <div class="col-xs-7  builder__header__client builder__header__client--choose">
+            <div class="col-xs-7  builder__header__client builder__header__client--choose hidden">
               <button type="button" class="btn btn-primary">Выбрать клиента</button>
             </div><!-- /.builder__header__client -->
 
-            <div class="col-xs-7  builder__header__client builder__header__client--list">
+            <div class="col-xs-7  builder__header__client builder__header__client--list hidden">
               <input type="text" name="client" list="clients">
               <datalist id="clients">
                 <option value="Иван Иванов">
@@ -132,59 +132,120 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <div class="builder__filter">
-          <fieldset>
-            <div class="builder__filter__search">
-              <span class="glyphicon glyphicon-search"></span>
-              <input type="text" name="" value="" placeholder="Поиск">
-            </div>
-            <select>
-              <option value="">Суп</option>
-              <option value="">Второе</option>
-              <option value="">Салат</option>
-              <option value="">Компот</option>
-            </select>
-            <div class="builder__result">
-              <h6 class="builder__result__heading">Заголовок</h6>
-              <span class="builder__result__descr">327 ккал / 100 г</span>
-              <span class="glyphicon glyphicon-plus"></span>
-            </div><!-- /.builder__result -->
-          </fieldset>
-        </div><!-- /.builder__search -->
-      </div>
+      <aside class="col-xs-12 col-md-4  builder__aside clearfix">
 
-      <div class="col-xs-12 col-md-8">
-        <div class="builder__body">
-          <div class="builder__client">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">Рецепты</a></li>
+          <li role="presentation"><a href="#">Информация</a></li>
+        </ul>
+
+        <fieldset class="builder__filter">
+          <div class="builder__filter__search">
+            <span class="glyphicon glyphicon-search"></span>
+            <input type="text" name="" value="" placeholder="Поиск">
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <select>
+                <option value="">Суп</option>
+                <option value="">Второе</option>
+                <option value="">Салат</option>
+                <option value="">Компот</option>
+              </select>
+            </div>
+            <div class="col-xs-6">
+              <select>
+                <option value="">Все теги</option>
+                <option value="">Второе</option>
+                <option value="">Салат</option>
+                <option value="">Компот</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="builder__result">
+            <h6 class="builder__result__heading">Заголовок</h6>
+            <span class="builder__result__descr">327 ккал / 100 г</span>
+            <span class="glyphicon glyphicon-plus"></span>
+          </div><!-- /.builder__result -->
+        </fieldset><!-- /.builder__filter -->
+
+        <div class="builder__info hidden">
+          <h6 class="builder__info__title">Аллергии</h6>
+          <ul>
+            <li>На орехи</li>
+            <li>На молочные продукты/лактозу</li>
+            <li>На пшеницу</li>
+            <li>На дрожжи</li>
+            <li>На яйца</li>
+            <li>На морепродукты</li>
+            <li>На сахар</li>
+            <li>На грибы</li>
+            <li>На сыр</li>
+          </ul>
+
+          <h6 class="builder__info__title">Симптомы</h6>
+          <ul>
+            <li>Язвы в полости рта</li>
+            <li>Прыщики</li>
+            <li>Частые простуды или инфекционные заболевания</li>
+            <li>Молочница или цистит</li>
+            <li>Диарея</li>
+            <li>Ревматизм и артрит</li>
+            <li>Боль в спине</li>
+            <li>Повышенное потоотделение</li>
+            <li>Выпадение волос</li>
+          </ul>
+        </div><!-- /.builder__info -->
+
+      </aside>
+
+      <div class="col-xs-12 col-md-8  builder__body">
+
+          <!-- <div class="builder__client">
             <img src="img/img.jpg" alt="" class="builder__client__img img-circle">
             <div class="builder__client__info">
               <div class="line"><span class="client__name">Михаил Марченко</span>, <span class="client__age">21</span></div>
               <div class="line"><span class="client__about">Преподаватель химии, Уфа</span></div>
-            </div><!-- /.builder__client__info -->
-          </div><!-- /.builder__client -->
+            </div>
+          </div> -->
 
-          <div class="builder__text">
+          <!-- <div class="builder__text">
             <a href="#" class="builder__text__set">Задать поясняющий текст</a>
             <a href="#" class="builder__text__delete">Убрать поясняющий текст</a>
             <textarea name="name" rows="4" cols="80"></textarea>
-          </div><!-- /.builder__text -->
+          </div> -->
 
-          <div class="builder__content">
+          <div class="alert alert-warning clearfix  builder__alert builder__alert--message hidden">
+            <span class="pull-left">План сохранен</span>
+            <a href="#" class="btn btn-primary pull-right">Перейти к профилю</a>
+          </div>
+
+          <div class="alert alert-danger clearfix  builder__alert builder__alert--delete hidden">
+            <span>Уверены, что хотите удалить элемент?</span>
+            <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Да, удалить</a>
+            <a href="#" class="btn btn-default">Не удалять</a>
+          </div>
+
+          <div class="builder__content builder__content--empty hidden">
+            <span>Добавьте рецепты из левой колонки и настройте их</span>
+          </div>
+
+          <div class="builder__content builder__content--available">
             <div class="builder__content__heading">
               <div class="row">
-                <div class="col-xs-12 col-sm-5"></div>
+                <div class="col-xs-12 col-sm-5">Рецепт</div>
                 <div class="col-xs-12 col-sm-2">Грамм</div>
                 <div class="col-xs-12 col-sm-2">Ккал</div>
                 <div class="col-xs-12 col-sm-2">БЖУ</div>
               </div>
             </div><!-- /.builder__content__heading -->
 
-            <div class="builder__dish--empty"><span>Добавьте первый рецепт, выбрав его на панели слева</span></div>
-
             <div class="builder__dish builder__dish--closed">
               <div class="builder__dish__header">
-                <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                <!-- <a href="#" class="glyphicon glyphicon-menu-hamburger"></a> -->
+
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <input type="text" placeholder="Название блюда">
@@ -226,7 +287,7 @@
 
             <div class="builder__dish builder__dish--opened">
               <div class="builder__dish__header">
-                <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+                <!-- <a href="#" class="glyphicon glyphicon-menu-hamburger"></a> -->
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <input type="text" placeholder="Название блюда">
@@ -294,8 +355,7 @@
             </div><!-- /.builder__dish-opened -->
 
           </div><!-- /.builder__content -->
-        </div><!-- /.builder__body -->
-      </div>
+      </div><!-- /.builder__body -->
     </div><!-- /.row -->
   </div><!-- /.container -->
 
