@@ -1,6 +1,6 @@
 # Overview 
 
-Trifit is a system that allows professional trainers to worl with their clients remotely.
+Trifit is a system that allows professional trainers to work with their clients remotely.
 
 # Preview 
 
