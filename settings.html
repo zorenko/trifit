@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Шаблоны питания</title>
+  <title>Настройки</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body class="team">
+<body class="settings">
 
 <nav class="navbar navbar-inverse">
   <div class="container">
@@ -68,62 +68,123 @@
   </div><!-- /.container -->
 </div><!-- /.subheader -->
 
-<div class="container clearfix">
+<div class="settings__body container clearfix">
   <div class="row">
     <div class="col-xs-12 col-md-7">
-      <h2>Слайды презентаций</h2>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Начало плана тренировок <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Завершение плана тренировок <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Начало программы питания <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Завершение программы питания <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
 
-      <h2>Письма</h2>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Начало плана тренировок <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
-      <div class="divider"></div>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Завершение плана тренировок <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Начало программы питания <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
-      <div class="alert alert-info clearfix">
-        <span class="text pull-left">Завершение программы питания <span class="text"> 2 слайда</span></span>
-        <div class="btn btn-default pull-right">Открыть</div>
-      </div>
+      <div class="settings__group">
+        <h2 class="settings__title">Слайды презентаций</h2>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Начало плана тренировок <span class="alert__comment"> 2 слайда</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Завершение плана тренировок <span class="alert__comment"> 2 слайда</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Начало программы питания <span class="alert__comment"> 5 слайда</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Завершение программы питания <span class="alert__comment"> 5 слайда</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+      </div><!-- /.settings__group -->
+
+      <div class="settings__group">
+        <h2 class="settings__title">Письма</h2>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Шаблон письма </span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <span class="divider"></span>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Участие оплачено <span class="alert__comment"> Наш дорогой толстый участник...</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Анкета не заполнена <span class="alert__comment"> Привет. Надеемся ты в порядке, но анкету...</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Анкета обрабатывается <span class="alert__comment"> Отлично, ты заполнил анкету и это...</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+        <div class="alert__btn alert alert-info clearfix">
+          <span class="alert__text pull-left">Планы обрабатываются <span class="alert__comment"> Ура! Прошло несколько дней и вот...</span></span>
+          <a href="#" class="btn btn-default pull-right">Открыть</a>
+        </div>
+      </div><!-- /.settings__group -->
+
     </div><!-- /.col-md-7 -->
 
     <div class="col-xs-12 col-md-5">
       <div class="row">
+
         <div class=" col-xs-12">
-          <h2 class="pull-left">Вопросы анкеты</h2>
-          <a href="#" class="btn btn-default pull-right">Редактировать</a>
+          <h2 class="settings__title clearfix">
+            <span class="pull-left">Вопросы анкеты</span>
+            <a href="#" class="btn btn-default pull-right">Редактировать</a>
+          </h2>
+
         </div><!-- /.col-xs-12 -->
+
         <div class=" col-xs-12">
           <div class="panel panel-default">
-            <table>
-              <tr>
-                <td>Укажите заболевания,..</td>
-                <td>текст</td>
-              </tr>
-            </table>
-          </div>
+            <div class="panel-body">
+              <table class="table">
+                <h4 class="panel-title">Здоровье</h4>
+                <tr>
+                  <td>Укажите заболевания,..</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+                <tr>
+                  <td>Какие лекарства вы принимаете?</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+                <tr>
+                  <td>Беспокоят ли вас какие-либо симптомы?</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+              </table>
+
+              <table class="table">
+                <h4 class="panel-title">Здоровье</h4>
+                <tr>
+                  <td>Укажите заболевания,..</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+                <tr>
+                  <td>Какие лекарства вы принимаете?</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+                <tr>
+                  <td>Беспокоят ли вас какие-либо симптомы?</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+              </table>
+
+              <table class="table">
+                <h4 class="panel-title">Здоровье</h4>
+                <tr>
+                  <td>Укажите заболевания,..</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+                <tr>
+                  <td>Какие лекарства вы принимаете?</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+                <tr>
+                  <td>Беспокоят ли вас какие-либо симптомы?</td>
+                  <td class="text-right"><a href="">текст</a></td>
+                </tr>
+              </table>
+
+              <a href="#" class="btn btn-default">Редактировать</a>
+            </div><!-- /.panel-body -->
+          </div><!-- /.panel -->
+
         </div><!-- /.col-xs-12 -->
       </div><!-- /.row -->
 
