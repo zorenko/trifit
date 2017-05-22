@@ -1,11 +1,21 @@
 .settings {
 
+  input[type="text"],
+  textarea {
+    border: 1px solid rgba($grey, .3);
+  }
+
   &__body {
     padding-top: 40px;
   }
 
   &__group {
     margin-bottom: 50px;
+
+    label {
+      margin-bottom: 15px;
+      color: $grey;
+    }
   }
 
   &__title {
@@ -31,6 +41,11 @@
 
     &__text {
       flex-grow: 1;
+    }
+
+    &__no {
+      font-weight: lighter;
+      padding-right: 10px;
     }
 
     &__comment {
@@ -67,15 +82,8 @@
       padding: 10px 0px;
       font-size: 13px;
     }
-    .table a {
+    .table .type {
       color: $grey;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: rgba($grey, .7);
-        cursor: pointer;
-      }
     }
   }
 
@@ -107,7 +115,6 @@
           border-bottom: 1px solid rgba($grey, .3);
 
           input[type="text"] {
-            border: 1px solid rgba($grey, .3);
             max-width: 60%;
             padding: 6px 10px;
           }
@@ -123,31 +130,55 @@
 
         &-body {
           padding: 0;
+
+          textarea {
+            border: none;
+          }
         }
-      }
-    }
-
-    .add__slide {
-      padding: 0;
-      vertical-align: middle;
-      line-height: 2.4;
-      color: #000;
-
-      &:hover,
-      &:focus,
-      &active {
-        text-decoration: none;
-        color: #000;
-      }
-
-      span.add__btn {
-        margin-left: 0;
-        margin-right: 10px;
       }
     }
 
     .glyphicon-arrow-right {
       margin-left: 7px;
     }
+
+     .nav-tabs {
+      border: none;
+    }
+     .nav-tabs>li>a {
+      border: none;
+      border-radius: 0;
+      padding: 14px 25px 10px;
+    }
+     .nav-tabs>li.active>a,
+     .nav-tabs>li.active>a:focus,
+     .nav-tabs>li.active>a:hover,
+     .nav-tabs>li>a:hover {
+      color: #000;
+      background-color: transparent;
+      border: none;
+      border-bottom: 4px solid #5491E7;
+    }
+  }
+
+
+}
+
+.add__slide {
+  padding: 0;
+  vertical-align: middle;
+  line-height: 2.4;
+  color: #000;
+
+  &:hover,
+  &:focus,
+  &active {
+    text-decoration: none;
+    color: #000;
+  }
+
+  span.add__btn {
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
