@@ -1,53 +1,224 @@
 $plan-blue: #002452;
 
 .plan {
+  background: #fff;
 
+  &__header,
+  &__footer {
+    background: $plan-blue;
+    color: white;
+  }
+
+  &__header {
+    padding: 25px 0;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+
+  &__body {
+    padding: 60px 0 130px;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      &:not(:first-child) {
+        padding-top: 30px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+  &__footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+
+    .h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      margin: 0;
+    }
+  }
 }
 
-.plan__header,
-.plan__footer {
-  background: $plan-blue;
-  color: white;
+.plan-first {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg-coach.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .plan__body {
+    padding: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      font-size: 80px;
+      font-weight: bold;
+    }
+
+    p {
+      font-weight: lighter;
+      color: #fff;
+      font-size: 28px;
+    }
+  }
 }
-.plan__header {
-  padding: 60px;
+
+.plan-last {
+
+  .plan__header,
+  .plan__body {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan__title {
+    font-size: 80px;
+  }
+
+  .plan__body {
+    height: 20vh;
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .plan__body span {
+    font-size: 36px;
+    font-weight: 300;
+
+    &:first-child {
+      padding-right: 50px;
+    }
+  }
 }
-.plan__title {
-  font-size: 140px;
-  font-weight: bold;
-  text-transform: uppercase;
+
+.plan-cover {
+
+  .plan__header {
+    padding: 60px 0;
+  }
+
+  .plan__title {
+    font-size: 130px;
+  }
+
+  .plan__body {
+    p {
+      color: $plan-blue;
+      font-size: 36px;
+      font-weight: lighter;
+    }
+  }
 }
-.plan__body {
-  padding: 50px;
+
+.plan-content {
+  .plan__footer {
+    justify-content: flex-end;
+  }
+
+  .plan__vid {
+    margin-bottom: 30px;
+  }
 }
-p {
-  color: $plan-blue;
-  font-size: 36px;
-  margin-bottom: 33px;
+
+.plan-text {
+  .container {
+    max-width: 980px;
+  }
+
+  .alert {
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  &-col {
+    h2 {
+      color: #fc0;
+    }
+  }
 }
-p:last-child {
-  margin-bottom: 0;
+
+.plan-recipe {
+
+  .plan__header {
+    padding: 40px 0;
+  }
+
+  .plan__title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .plan__recipe {
+    ul {
+      padding: 0;
+      margin-bottom: 30px;
+
+      li {
+        list-style: none;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
-.plan__footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.plan__footer .h2 {
-  text-transform: uppercase;
-  font-size: 42px;
-}
-.plan-last .plan__header {
-  padding: 337px 0px;
-}
-.plan-last .plan__title {
-font-size: 80px;
-text-align: center;
-}
-.plan-last .plan__body {
-  text-align: center;
-  font-size: 40px;
-}
-.plan-last .plan__body span:first-child {
-padding-right: 50px;  
+
+.plan-table {
+  .plan__body {
+    max-width: 980px;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #696969;
+      margin-bottom: 30px;
+    }
+
+    .table {
+      th, td {
+        background: #e8f0fb;
+        outline: 1px solid #fff;
+        border: none;
+      }
+      th {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+  }
 }
