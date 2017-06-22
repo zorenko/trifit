@@ -24,11 +24,13 @@
     margin-bottom: 15px;
   }
 
-  input[type=text].user-signin__input {
+  input[type=text].user-signin__input,
+  input[type=password].user-signin__input {
     border-radius: 0;
     border-bottom: 1px solid $grey-hover;
     margin-bottom: 30px;
     padding: 7px 0;
+    width: 100%;
   }
 
   .btn {
